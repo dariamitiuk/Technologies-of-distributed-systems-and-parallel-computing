@@ -1,13 +1,10 @@
 import threading
 
-
 def sum(a, b):
     print("Sum: {}".format(a + b))
 
-
 def product(a, b):
     print("Product: {}".format(a * b))
-
 
 if __name__ == "__main__":
     t1 = threading.Thread(target=sum, args=(10, 15))
